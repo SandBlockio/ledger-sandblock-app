@@ -22,7 +22,7 @@ endif
 include $(BOLOS_SDK)/Makefile.defines
 
 # Main app configuration
-APPNAME = "Cosmos"
+APPNAME = "Sandblock"
 APPVERSION_M=1
 APPVERSION_N=5
 APPVERSION_P=3
@@ -150,4 +150,4 @@ include $(BOLOS_SDK)/Makefile.rules
 dep/%.d: %.c Makefile
 
 listvariants:
-	@echo VARIANTS COIN cosmos
+	@echo VARIANTS COIN sandblock

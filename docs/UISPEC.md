@@ -23,7 +23,7 @@ Screen 1. (default)
 ```
 LINE1:
 LINE2:                      Tendermint
-LINE3: [tendermint icon]    Cosmos TEST!   [down icon]
+LINE3: [tendermint icon]    Sandblock TEST!   [down icon]
 ```
 
 Note: Test only appears when the app has been compiled in test mode.

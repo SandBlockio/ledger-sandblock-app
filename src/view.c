@@ -91,9 +91,9 @@ ux_state_t G_ux;
 bolos_ux_params_t G_ux_params;
 
 #ifdef TESTING_ENABLED
-UX_FLOW_DEF_NOCB(ux_idle_flow_1_step, pbb, { &C_icon_app, "Tendermint", "Cosmos TEST!", });
+UX_FLOW_DEF_NOCB(ux_idle_flow_1_step, pbb, { &C_icon_app, "Sandblock", "Wallet TEST!", });
 #else
-UX_FLOW_DEF_NOCB(ux_idle_flow_1_step, pbb, { &C_icon_app, "Tendermint", "Cosmos", });
+UX_FLOW_DEF_NOCB(ux_idle_flow_1_step, pbb, { &C_icon_app, "Sandblock", "Wallet", });
 #endif
 UX_FLOW_DEF_VALID(ux_idle_flow_2_step, pb, view_addr_choose_show(0), { &C_icon_eye, "Show Address",});
 UX_FLOW_DEF_NOCB(ux_idle_flow_3_step, bn, { "Version", APPVERSION, });
@@ -141,9 +141,9 @@ const ux_menu_entry_t menu_transaction_info[] = {
 
 const ux_menu_entry_t menu_main[] = {
 #ifdef TESTING_ENABLED
-        {NULL, NULL, 0, &C_icon_app, "Tendermint", "Cosmos TEST!", 33, 12},
+        {NULL, NULL, 0, &C_icon_app, "Sandblock", "Wallet TEST!", 33, 12},
 #else
-        {NULL, NULL, 0, &C_icon_app, "Tendermint", "Cosmos", 33, 12},
+        {NULL, NULL, 0, &C_icon_app, "Sandblock", "Wallet", 33, 12},
 #endif
         {NULL, view_addr_choose_show, 0, NULL, "Show Address", NULL, 0, 0},
         {NULL, NULL, 0, NULL, "v"APPVERSION, NULL, 0, 0},
